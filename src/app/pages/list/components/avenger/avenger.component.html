@@ -1,0 +1,10 @@
+<li>
+<div  *ngIf="avengerToShow " [ngClass]="{ 'active-avenger': avengerToShow.isActive }"
+>
+<p>AVENGER: {{ avengerToShow.hero }}</p>
+<p>REAL NAME: {{ avengerToShow.name }}</p>
+<img class="list-div__img" src="{{avengerToShow.img}}" alt="{{avengerToShow.hero}}">
+<button><a href="{{avengerToShow.link}}" target="_blank" >Click here for check the official charater's page</a></button>
+
+</div>
+</li>

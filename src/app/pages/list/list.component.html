@@ -1,0 +1,14 @@
+
+
+<div>
+    <ul>
+
+<app-avenger
+*ngFor="let avenger of avengers"
+    [avengerToShow]="avenger"
+    [class.active]="avenger.isActive" (click)="onAvengerClick(avenger)" 
+></app-avenger>
+</ul>
+</div>
+<div class="div-active" *ngIf="activeAvengersCount === 0">Zero elements active</div>
+<div class="div-active" *ngIf="activeAvengersCount !== 0">{{ activeAvengersCount }} active</div>
